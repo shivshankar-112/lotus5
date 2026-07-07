@@ -80,7 +80,7 @@ export default function PaymentPage() {
       return;
     }
     setLoading(true);
-    handleDeposit(amount, utr, method != "qr" ? method : "upi", paymentConfig?.bank)
+    handleDeposit(amount, utr, "upi", paymentConfig?.bank)
       .then(() => {
         setLoading(false);
         toast.success("Deposit request submitted successfully!", {position: "top-center", });
@@ -305,7 +305,7 @@ export default function PaymentPage() {
           <div className="flex items-center justify-between">
             <div>
               <h3 className="font-semibold">Payment Proof</h3>
-              <p className="text-xs text-white/45">Enter UTR & upload screenshot</p>
+              <p className="text-xs text-white/45">Enter UTI( Unique Transaction Id)</p>
             </div>
 
             <div className="rounded-full bg-green-500/10 px-3 py-1 text-[10px] text-green-400">
@@ -316,7 +316,7 @@ export default function PaymentPage() {
           <input
             value={utr}
             onChange={e => setUtr(e.target.value)}
-            placeholder="Transaction / UTR ID"
+            placeholder="Transaction / UTI ID"
             className="mt-4 h-12 w-full rounded-xl border border-white/10 bg-[#202636] px-4 outline-none focus:border-yellow-400"
           />
 
