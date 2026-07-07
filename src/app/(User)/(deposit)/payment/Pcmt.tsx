@@ -80,7 +80,7 @@ export default function PaymentPage() {
       return;
     }
     setLoading(true);
-    handleDeposit(amount, utr, method, paymentConfig?.bank)
+    handleDeposit(amount, utr, method != "qr" ? method : "upi", paymentConfig?.bank)
       .then(() => {
         setLoading(false);
         toast.success("Deposit request submitted successfully!", {position: "top-center", });
