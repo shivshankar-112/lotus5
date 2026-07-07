@@ -259,7 +259,7 @@ export default function PaymentPage() {
             Pay ₹{amount || 500} with UPI
           </button>
 
-          <div className="mt-4 grid grid-cols-4 gap-3">
+          {/* <div className="mt-4 grid grid-cols-4 gap-3">
             {[
               { name: "PhonePe", logo: "/payments/phonepe.png" },
               { name: "GPay", logo: "/payments/gpay.png" },
@@ -282,7 +282,7 @@ export default function PaymentPage() {
                 <span className="text-[11px]">{app.name}</span>
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className="mt-5 rounded-2xl border border-white/10 bg-[#202636] p-4 flex items-center justify-between">
             <div>
@@ -320,7 +320,7 @@ export default function PaymentPage() {
             className="mt-4 h-12 w-full rounded-xl border border-white/10 bg-[#202636] px-4 outline-none focus:border-yellow-400"
           />
 
-          <label className="mt-4 flex h-40 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-yellow-500/20 bg-[#171b26] hover:border-yellow-400 transition">
+          {/* <label className="mt-4 flex h-40 cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-yellow-500/20 bg-[#171b26] hover:border-yellow-400 transition">
             <Upload className="text-yellow-400" />
             <span className="mt-3 font-medium">
               {file ? file.name : "Upload Payment Screenshot"}
@@ -335,7 +335,7 @@ export default function PaymentPage() {
               accept="image/*"
               onChange={e => setFile(e.target.files?.[0] || null)}
             />
-          </label>
+          </label> */}
         </Card>
 
         {/* Verification */}
