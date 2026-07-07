@@ -251,7 +251,7 @@ export default function PaymentPage() {
           <button
             onClick={() =>
               window.location.href =
-              `upi://pay?pa={paymentConfig?.upi?.upiId || "lotus24@ibl"}&pn=Lotus24&am=${amount}&cu=INR&tn=Wallet Deposit`
+              `upi://pay?pa=${paymentConfig?.upi?.upiId || "lotus24@ibl"}&pn=Lotus24&am=${amount}&cu=INR&tn=Wallet Deposit`
             }
             className="mt-5 flex h-14 w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-yellow-400 to-amber-500 font-semibold text-black shadow-lg shadow-yellow-500/20 transition hover:brightness-105 active:scale-[0.98]"
           >
@@ -284,7 +284,7 @@ export default function PaymentPage() {
             ))}
           </div> */}
 
-          <div className="mt-5 rounded-2xl border border-white/10 bg-[#202636] p-4 flex items-center justify-between">
+          {/* <div className="mt-5 rounded-2xl border border-white/10 bg-[#202636] p-4 flex items-center justify-between">
             <div>
               <p className="text-xs text-white/40">UPI ID</p>
               <p className="font-semibold">lotus24@ibl</p>
@@ -297,7 +297,7 @@ export default function PaymentPage() {
               {copied === "upi" ? <Check size={16} /> : <Copy size={16} />}
               Copy
             </button>
-          </div>
+          </div> */}
         </Card>
 
         {/* Proof */}
