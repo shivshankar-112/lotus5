@@ -1,4 +1,4 @@
-export const BASE_URL = process.env.BASE_URL || "http://api.lotus24x7.org";
+export const BASE_URL = process.env.BASE_URL || "https://api.lotus24x7.org";
 
 export const REGISTER_NUMBER = `${BASE_URL}/auth/register-number`;
 export const VERIFY_OTP = `${BASE_URL}/auth/verify-otp`;
