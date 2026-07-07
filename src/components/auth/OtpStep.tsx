@@ -78,7 +78,7 @@ export default function OtpStep({
         className="flex items-center justify-between rounded-xl px-4 py-3"
         style={{ background: "rgba(251,191,36,0.06)", border: "1px solid rgba(251,191,36,0.15)" }}
       >
-        <span style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>Demo OTP</span>
+        <span style={{ fontSize: 12, color: "rgba(255,255,255,0.4)" }}>OTP</span>
         <span style={{ fontFamily: "'Orbitron', sans-serif", fontSize: 14, color: "#fbbf24", fontWeight: 700, letterSpacing: "3px" }}>
           {receivedOtp}
         </span>
